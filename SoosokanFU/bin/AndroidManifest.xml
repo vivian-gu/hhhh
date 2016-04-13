@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.soosokanfu"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+   
+    
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="soosokan.Activity.UserMainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+          <activity android:name="com.facebook.LoginActivity"
+          android:theme="@android:style/Theme.Translucent.NoTitleBar"
+          android:label="@string/app_name" />
+        
+        <activity
+            android:name="soosokan.Activity.SearchResultActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="soosokan.Activity.AdsDetailActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="soosokan.Activity.AccountActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="soosokan.Activity.AdsListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="soosokan.Activity.FavoriteActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="soosokan.Activity.ItemlistActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="soosokan.Activity.ShopListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="soosokan.Tool.CameraActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="soosokan.Activity.AdsMainListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="soosokan.Activity.AdsFullListActivity"
+            android:label="@string/app_name" >
+        </activity>
+            <activity
+            android:name="soosokan.Activity.RefreshableView"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="soosokan.Activity.ItemListActivity"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="soosokan.Activity.ViewShopItemActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="soosokan.Activity.ItemofOneShopListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="soosokan.Activity.ItemDetailActivity"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="soosokan.Activity.AdsMainInterface"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="soosokan.Activity.AdsDeleteActivity"
+            android:label="@string/app_name" >
+        </activity>
+         
+         <activity
+            android:name="soosokan.Activity.StoredAdsListActivity"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="soosokan.Activity.MyApplication"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="soosokan.Activity.AdsDetailView"
+            android:label="@string/app_name" >
+        </activity>
+    
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+    </application>
+
+</manifest>

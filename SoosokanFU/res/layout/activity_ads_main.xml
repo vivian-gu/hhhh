@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:background="@drawable/mm_listitem"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        >
+       <RelativeLayout  
+        android:id="@+id/layout_top"  
+        android:layout_weight="1"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" 
+            >
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="top"
+                android:background="@drawable/tab_selector_backgound"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_adsfull"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.5"
+                    android:drawableTop="@drawable/tab_selector_adsfull"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radio_adstypes"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.5"
+                    android:drawableTop="@drawable/tab_selector_adstypes"
+                    android:button="@null" />
+            </RadioGroup>
+        </TabWidget>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+        </FrameLayout>
+        
+    </LinearLayout>
+
+</TabHost>

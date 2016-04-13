@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    <LinearLayout
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="25dp"           
+            android:src="@drawable/logo_small" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/shoplist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title1"
+        android:listSelector="@drawable/item_bk" >
+    </ListView>
+
+</RelativeLayout>
